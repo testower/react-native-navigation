@@ -612,7 +612,7 @@ const NSInteger TRANSPARENT_NAVBAR_TAG = 78264803;
     
     NSString *navBarCustomView = self.navigatorStyle[@"navBarCustomView"];
     if (navBarCustomView && ![self.navigationItem.titleView isKindOfClass:[RCCCustomTitleView class]]) {
-        if ([self.view isKindOfClass:[RCTRootView class]]) {
+        if ([self.rootView isKindOfClass:[RCTRootView class]]) {
             
             RCTBridge *bridge = ((RCTRootView*)self.view).bridge;
             
